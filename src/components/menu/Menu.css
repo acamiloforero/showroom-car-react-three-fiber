@@ -1,0 +1,54 @@
+.menu {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  font-family: Arial, sans-serif;
+  width: 180px;
+  z-index: 2;
+}
+
+.menu h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.colors,
+.environments {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.colors button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.colors button:hover {
+  transform: scale(1.2);
+}
+
+.environments button {
+  width: 100%;
+  padding: 8px;
+  background: #444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.environments button:hover {
+  background: #666;
+}
