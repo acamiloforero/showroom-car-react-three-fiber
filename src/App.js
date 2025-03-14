@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { useGLTF } from "@react-three/drei";
 
@@ -29,15 +29,6 @@ export default function App() {
   });
  
 
-  useEffect(() => {
-    if (scene) {
-      let body = scene.getObjectByName("Body");
-      console.log(scene);
-     
-    
-    }
-  }, [scene]);
-
   return (
     <div className="App">
       {/* Menú de opciones */}
@@ -55,7 +46,7 @@ export default function App() {
         {/* Fondo dinámico */}
         <Ambient environment={environment} ground={{ height: 15, scale: 30 }} />
 
-        {/* 🎬 Efecto de Desenfoque (DOF) */}
+        {/*Efecto de Desenfoque */}
         <Effects />
 
         {/* Control de cámara */}

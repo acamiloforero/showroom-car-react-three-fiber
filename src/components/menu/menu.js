@@ -6,7 +6,7 @@ const Menu = ({ scene, environmentRef }) => {
 
   const environments = [
     {
-        name: "Noche Urbana",
+        name: "Night City",
         type: "cubemap",
         files: [
           "./cubemap/posx.jpg",
@@ -17,7 +17,7 @@ const Menu = ({ scene, environmentRef }) => {
           "./cubemap/negz.jpg",
         ],
       },
-    { name: "Día Soleado", type: "hdr", file: "./hdrs/CiudadDia.jpg" },
+    { name: "Sun Day", type: "hdr", file: "./hdrs/CiudadDia.jpg" },
     
   ];
    
@@ -55,14 +55,13 @@ const Menu = ({ scene, environmentRef }) => {
     });
 
     await showLights(env);
-    
-    console.log("Nuevo entorno:", env);
+  
   };
   
 
   return (
     <div className="menu">
-      <h3>Selecciona un color</h3>
+      <h3>Choose color</h3>
       <div className="colors">
         {colors.map((color) => (
           <button
@@ -73,7 +72,7 @@ const Menu = ({ scene, environmentRef }) => {
         ))}
       </div>
 
-      <h3>Selecciona un entorno</h3>
+      <h3>Select Enviroment</h3>
       <div className="environments">
         {environments.map((env) => (
           <button key={env.name} onClick={() => changeEnvironment(env)}>
