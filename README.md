@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# 🚗 Car Showroom - React Three Fiber
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a **Car Showroom** built using **React Three Fiber**. It allows users to explore a 3D car model with interactive features, such as changing the car's color and environment. The project also supports loading additional models and customizing the scene.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🌟 Features
+✅ **Load 3D Car Model** (`.glb` format)  
+✅ **Change Car Color** dynamically  
+✅ **Switch Environments** (HDR & CubeMap)  
+✅ **Interactive Scene Controls**  
+✅ **Realistic Lighting & Effects**  
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📂 Project Structure
+```plaintext
+src/
+├── components/
+│   ├── Model.js           # Loads and renders the car model
+│   ├── Environment.js     # Handles HDR and CubeMap environments
+│   ├── ControlsCamera.js  # Controls for moving around the scene
+│   ├── Effects.js         # Post-processing effects
+│   ├── AmbientLight.js    # Ambient lighting
+│   ├── DirectionalLight.js# Directional lighting
+│   ├── menu/
+│   │   ├── Menu.js        # UI for color and environment selection
+│   │   └── Menu.css       # Styles for the menu
+├── App.js                 # Main application file
+├── index.js               # React entry point
+├── index.css              # Global styles
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🚀 Installation & Usage
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1️⃣ Install dependencies:
+```sh
+npm install
+```
+### 2️⃣ Run the development server:
+```sh
+npm run start
+```
+### 3️⃣ Open in browser:
+Go to [http://localhost:3000](http://localhost:3000)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **React Three Fiber** - 3D rendering with Three.js  
+- **Drei** - Useful helpers for Three.js in React  
+- **GLTFLoader** - Load `.glb` 3D models  
+- **HDR & CubeMap Environments** - Dynamic lighting effects  
+- **React Hooks** - Manage state and effects  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🎨 How to Use
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- 🖌️ Use the menu panel to select a car color  
+- 🌄 Switch between day & night environments  
+- 🎥 Click and drag to rotate the scene 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📝 License
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is open-source under the [MIT License](https://opensource.org/licenses/MIT).
